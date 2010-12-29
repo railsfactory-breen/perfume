@@ -1,0 +1,10 @@
+<h1> SUCCESS </h1>
+<%=@f%>
+<%-@z.each do |f| %>
+<%=f.id%>
+<%=f.username%>
+<%=f.pwd%><br>
+<%-end%>
+
+<%= link_to "back", :controller=> "vinos", :action => "login"  %>
+

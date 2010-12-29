@@ -1,0 +1,11 @@
+<%- form_for :sin,:url=>{ :action=> 'successq' } do |f|  %>
+<%= f.label:username %>
+<%= f.text_field:username %> <br>
+<%= f.label:password %>
+<%= f.password_field:pwd %>
+<%= f.submit:"login" %>
+
+<%- end %>
+
+<%= link_to "Signup", :controller=> "vinos", :action => "signup"  %>
+<%= link_to "logout", :controller=> "vinos", :action => "bye"  %>

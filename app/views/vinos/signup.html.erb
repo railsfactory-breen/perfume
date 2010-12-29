@@ -1,0 +1,10 @@
+<%- form_for :sup,:url=>{ :action=> "successq" } do |f|  %>
+<%= f.label:username %>
+<%= f.text_field:username %> <br>
+<%= f.label:password %>
+<%= f.password_field:pwd %>
+
+<%= f.submit:"signup" %>
+<%- end %>
+
+
